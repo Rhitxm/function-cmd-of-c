@@ -1,4 +1,4 @@
-//print hello and bonjour for different type of nationality
+//print namaste and bonjour for different type of nationality
 #include <stdio.h>
 void namaste();
 void bonjour();
