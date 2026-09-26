@@ -54,4 +54,25 @@ void calculatePrice(float value){
     value=value+(value*0.18);
     printf("final value is:%f\n", value);
 }
+//to calculate area of square, rectangle and circle using functions
+#include<stdio.h>
+#include<math.h>
+float areaofSquare(float side);
+float areaofRectangle(float length, float breadth);
+float areaofCircle(float radius);
 
+int main(){
+    float length=4.0;
+    float breadth=10.0;
+    printf("area is:%f", areaofRectangle(length, breadth));
+return 0;
+}
+float areaofSquare(float side){
+    return side*side;
+}
+float areaofRectangle(float length, float breadth){
+    return length*breadth;
+}
+float areaofCircle(float radius){
+    return 3.14*radius*radius;
+}
