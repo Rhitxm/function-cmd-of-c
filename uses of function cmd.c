@@ -39,3 +39,19 @@ int s=sum(a, b);
 int sum(int x, int y){
     return x+y;
 }
+
+//calculating price using GST 
+
+#include <stdio.h> 
+void calculatePrice(float value);
+    
+int main(){
+    float value=100.0;
+    calculatePrice(value);
+    return 0;
+}
+void calculatePrice(float value){
+    value=value+(value*0.18);
+    printf("final value is:%f\n", value);
+}
+
