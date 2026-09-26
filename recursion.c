@@ -35,5 +35,5 @@ int sum(int n){
     int sumN=sumNm1+n;
     return sumN;
 }
-
+//calculate factorial of n natural numbers
 
