@@ -68,7 +68,7 @@ float convertTemp(float celsius){
 int fib(int n);
 
 int main(){
-    fib(6);
+    fib();//enter your number here()
     return 0;
 }
 int fib(int n){
