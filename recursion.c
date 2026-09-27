@@ -15,6 +15,7 @@ printHW(count-1);
 }
 
 //print sum of first n natural numbers using recursion
+
 #include <stdio.h>
 int sum(int n);
 int main() {
@@ -64,6 +65,7 @@ float convertTemp(float celsius){
     return far;
 }
 //printing the fibbonacci series
+//this prints repeated fibbonaci's
 #include <stdio.h>
 int fib(int n);
 
@@ -85,4 +87,25 @@ int fibN=fibNm1+fibNm2;
 printf("fib of %d is: %d\n", n, fibN);
 return fibN;
 }
+//to print the fibbonaci of the exact number
+#include <stdio.h>
+int fib(int n);
 
+int main(){
+    printf("%d",fib());// enter the number here()
+    return 0;
+}
+int fib(int n){
+    if (n==0){
+        return 0;
+    }
+    if (n==1){
+        return 1;
+    }
+
+int fibNm1=fib(n-1);
+int fibNm2=fib(n-2);
+int fibN=fibNm1+fibNm2;
+//printf("fib of %d is: %d\n", n, fibN);
+return fibN;
+}
