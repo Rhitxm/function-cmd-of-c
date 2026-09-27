@@ -31,6 +31,20 @@ int sum(int n){
     if (n==1){
         return 1;
     }
+    //calulate percentage
+    #include <stdio.h>
+float calcPercentage(float science, float maths, float sanskrit);
+int main() {
+   float science=95.0;
+   float maths=88.0;
+    float sanskrit=97.0;
+    printf("Percentage is:%f\n", calcPercentage( science,  maths,  sanskrit));
+    return 0;
+}
+float calcPercentage(float science, float maths, float sanskrit){
+    return ((science+maths+sanskrit)/300.0)*100;
+}
+
     int sumNm1=sum(n-1);
     int sumN=sumNm1+n;
     return sumN;
