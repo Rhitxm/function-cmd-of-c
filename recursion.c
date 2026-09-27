@@ -109,3 +109,24 @@ int fibN=fibNm1+fibNm2;
 //printf("fib of %d is: %d\n", n, fibN);
 return fibN;
 }
+//to print the fibbonaci series using for loop
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter your number: ");
+    scanf("%d", &n);
+
+    int a = 0, b = 1;
+
+    for (int i = 0; i < n; i++) {
+        int next = a + b;
+        a = b;
+        b = next;
+    }
+
+    printf("%d\n", a);
+
+    return 0;
+}
