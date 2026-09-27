@@ -37,3 +37,17 @@ int sum(int n){
 }
 //calculate factorial of n natural numbers
 
+// function to convert celsius into farhenite
+#include <stdio.h>
+float convertTemp(float celsius);
+int main() {
+    float far=convertTemp(0);//enter your celcius value into ()
+    printf("far:%f", far);
+    return 0;
+}
+float convertTemp(float celsius){
+    float far=celsius*(9/5)+32;
+    return far;
+}
+
+
