@@ -77,6 +77,8 @@ float areaofCircle(float radius){
     return 3.14*radius*radius;
 }
 //swap two numbers
+//using call by value
+
 //using call by reference
 #include <stdio.h>
 void swap(int a, int b);
